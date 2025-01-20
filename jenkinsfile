@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+    
+        stages{
+            stage('build'){
+                steps{
+                    bat 'echo start build'
+                }
+            }    
+                
+            stage('run'){
+                steps{
+                    bat 'echo start run'
+                }
+            }
+            stage('report'){
+                steps{
+                    bat 'echo start report'
+                }
+            }
+            
+            
+        }
+    
+}
